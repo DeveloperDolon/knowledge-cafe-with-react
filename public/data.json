@@ -1,0 +1,49 @@
+
+[
+    {
+      "profile_name": "User123",
+      "profile_image": "../src/assets/images/boy1.png",
+      "post_date": "2023-09-12",
+      "time_to_read": "5 minutes",
+      "hashtags": ["#Travel", "#Adventure"],
+      "title": "Exploring the Wilderness",
+      "cover_picture": "https://i.ibb.co/vc4tWJZ/1.jpg"
+    },
+    {
+      "profile_name": "SocialGuru",
+      "profile_image": "../src/assets/images/boy2.png",
+      "post_date": "2023-09-11",
+      "time_to_read": "3 minutes",
+      "hashtags": ["#Tech", "#Innovation"],
+      "title": "The Future of Technology",
+      "cover_picture": "https://i.ibb.co/Sfyck2T/2.png"
+    },
+    {
+      "profile_name": "FoodieQueen",
+      "profile_image": "../src/assets/images/girl2.jpg",
+      "post_date": "2023-09-10",
+      "time_to_read": "7 minutes",
+      "hashtags": ["#Food", "#Cuisine"],
+      "title": "Culinary Adventures",
+      "cover_picture": "https://i.ibb.co/HtDPBMN/3.png"
+    },
+    {
+      "profile_name": "FitnessFanatic",
+      "profile_image": "../src/assets/images/girl1.jpg",
+      "post_date": "2023-09-09",
+      "time_to_read": "4 minutes",
+      "hashtags": ["#Fitness", "#Health"],
+      "title": "A Journey to Better Health",
+      "cover_picture": "https://i.ibb.co/z4vSqmv/4.jpg"
+    },
+    {
+      "profile_name": "ArtEnthusiast",
+      "profile_image": "../src/assets/images/boy2.png",
+      "post_date": "2023-09-08",
+      "time_to_read": "6 minutes",
+      "hashtags": ["#Art", "#Creativity"],
+      "title": "Exploring the World of Art",
+      "cover_picture": "https://i.ibb.co/St2m2Jd/5.jpg"
+    }
+  ]
+  
