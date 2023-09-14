@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { BsFillBookmarkFill } from 'react-icons/bs';
 
-export default function Blog({ blog }) {
+export default function Blog({ blog, handleBookMarks, handleReadBlog }) {
 
     const { profile_name, profile_image, post_date, time_to_read, hashtags, cover_picture, title } = blog;
 
@@ -11,7 +11,7 @@ export default function Blog({ blog }) {
                 <img className="w-full rounded-lg" src={cover_picture} alt="" />
             </div>
 
-            <div className="flex justify-between items-center py-4">
+            <div className="flex justify-between items-center pt-4 pb-2">
                 <div className="flex gap-5">
                     <img className="w-[10%]" src={profile_image} alt="" />
                     <div>
@@ -20,9 +20,13 @@ export default function Blog({ blog }) {
                     </div>
                 </div>
 
-                <div className="flex gap-2 items-center">
-                    <p>{time_to_read} read</p>
-                    <BsFillBookmarkFill className="cursor-pointer"></BsFillBookmarkFill>
+                <div className="flex gap-2 items-center w-fit">
+                    <p className="w-fit">{time_to_read}min read</p>
+                    
+                    <button>
+                        <BsFillBookmarkFill onClick={() => handleBookMarks(blog)} className="cursor-pointer"></BsFillBookmarkFill>
+                    </button>
+
                 </div>
             </div>
 
@@ -37,12 +41,14 @@ export default function Blog({ blog }) {
             </div>
 
             <div>
-                <a className="font-semibold text-purple-600 underline cursor-pointer">Mark As read</a>
+                <a onClick={() => handleReadBlog(blog.id)} className="font-semibold text-purple-600 underline cursor-pointer">Mark As read</a>
             </div>
         </div>
     )
 }
 
 Blog.propTypes = {
-    blog: PropTypes.object
+    blog: PropTypes.object,
+    handleBookMarks: PropTypes.func,
+    handleReadBlog: PropTypes.func
 }
